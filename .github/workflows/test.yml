@@ -1,1 +1,10 @@
-echo " hi"
+name: ci
+on:
+  push:
+    branches:
+      -main
+jobs:
+  build:
+    runs-on:ubantu-latest 
+    steps:
+    - run: echo " hi"

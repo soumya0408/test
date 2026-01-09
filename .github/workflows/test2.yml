@@ -1,1 +1,12 @@
-
+name: ci
+on:
+  push:
+    branches:
+      -main
+jobs:
+  build:
+    runs-on: ubantu-latest 
+    steps:
+      - uses: action/checkout@4
+      - name: run
+        run: echo " hi"
